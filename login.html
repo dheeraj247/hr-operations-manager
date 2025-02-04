@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container"></div>
+    <div class="form">
+        <h1>Login</h1>
+        <label for="username">Email</label>
+        <input type="email" id="username" name="username" required>
+        <label for="password">Password</label>
+        <div class="password-container">
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="toggle-password" aria-label="Show password"></button>
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember me</label>
+        </div>
+        <button type="submit" id="login-btn">Login</button>
+        <div class="links">
+            <p><a href="#">Forgot Password?</a></p>
+            <p><a href="registration.html">New User?</a></p>
+        </div>
+        <div class="sign-in-ops">
+            <a href="#" target="_blank">
+                <img src="images/google-icon.png" alt="Sign in with Google" class="google-icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/4202105_microsoft_logo_social_social media_icon.png" alt="Sign in with Microsoft" class="microsoft-icon">
+            </a>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

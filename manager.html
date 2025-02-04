@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Portal</title>
+    <link rel="stylesheet" href="manager.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="profile-icon">
+            <i class="fas fa-user-circle" style="font-size: 40px; color: gray;"></i>
+        </div>
+        <ul>
+            <li><a href="#applicant-overview">Applicant Overview</a></li>
+            <li><a href="#schedule">Interview Schedule</a></li>
+            <li><a href="reports">Reports</a></li>
+        </ul>
+    </div>
+    <div class="applicant-overview" id="applicant-overview">
+        <center><h2>Applicant Overview</h2></center>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search by name, role, or ID" />
+            <select id="filterStatus">
+                <option value="all">All Statuses</option>
+                <option value="pending">Pending</option>
+                <option value="shortlisted">Shortlisted</option>
+                <option value="rejected">Rejected</option>
+                <option value="hired">Hired</option>
+            </select>
+            <button id="searchBtn">Search</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Job Role</th>
+                    <th>Application Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Software Engineer</td>
+                    <td>2024-10-25</td>
+                    <td><span class="status pending">Pending</span></td>
+                    <td>
+                        <button class="view-details">View Details</button>
+                        <button class="shortlist">Shortlist</button>
+                        <button class="reject">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Software Engineer</td>
+                    <td>2024-10-25</td>
+                    <td><span class="status shortlisted">Shortlisted</span></td>
+                    <td>
+                        <button class="view-details">View Details</button>
+                        <button class="reject">Reject</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Software Engineer</td>
+                    <td>2024-10-25</td>
+                    <td><span class="status hired">Hired</span></td>
+                    <td>
+                        <button class="view-details">View Details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="schedule" id="schedule">
+        <h2>Schedule Interview</h2>
+        <label for="candidateSelect">Select Candidate:</label>
+        <select id="candidateSelect">
+        </select>
+        
+        <div id="interviewDetails">
+            <label for="interviewDate">Interview Date:</label>
+            <input type="date" id="interviewDate" required>
+
+            <label for="interviewTime">Interview Time:</label>
+            <input type="time" id="interviewTime" required>
+
+            <label for="interviewer">Assign Interviewer:</label>
+            <select id="interviewer">
+                <option value="interviewer1">John Doe</option>
+                <option value="interviewer2">Jane Smith</option>
+                <option value="interviewer3">Alice Johnson</option>
+            </select>
+
+            <label for="interviewLocation">Interview Location:</label>
+            <input type="text" id="interviewLocation" placeholder="Enter location (Physical/Virtual)" required>
+        </div>
+
+        <h3>Scheduled Interviews</h3>
+        <div id="scheduledInterviews">
+        </div>
+    </div>
+    <script src="manager.js"></script>
+</body>
+</html>

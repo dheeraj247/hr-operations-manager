@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #E0E0E0;
+    box-shadow: 0 2px 5px rgba(211, 215, 219, 0.5);
+}
+.profile-icon {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+ul li {
+    margin: 0 15px;
+    padding: 10px 10px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+}
+ul li:hover {
+    color: #FFFFFF;
+    background-color:dodgerblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(97, 170, 247, 0.5);
+}
+.main-content { 
+    padding: 70px 20px;
+}
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.metric {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.metric:hover{
+    background-color: #FFB84D; 
+    color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.metric h2 {
+    margin-bottom: 10px;
+}
+.app-list {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.app-list input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 95%;
+}
+.app-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.app-list th, .app td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.app-list th {
+    background-color: #3e5dda;
+    color: white;
+}
+.app-list tr:hover {
+    background-color: #f1f1f1;
+}
+.buttons{
+    border: none;
+    display: flex;
+    justify-content:space-evenly;
+    gap: 80px;
+}
+.buttons button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.buttons button:hover{
+    cursor: pointer;
+    background-color:dodgerblue;
+    transform: scale(1.05);
+}
+.recent-activities {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.recent-activities ul {
+    list-style-type: none;
+}
+.recent-activities li {
+    margin: 10px 0;
+}
+.quick-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.quick-actions button {
+    padding: 10px;
+    background-color: #3e5dda;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.quick-actions button:hover {
+    background-color:#A6C8E0;
+}
+.Contact{
+    background-color: #E0E0E0;
+}
+.Contact h2{
+    text-align: center;
+    color:#333333;
+    margin: 0;
+    padding: 0;
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px;
+}
+.contact-info i{
+    font-size: 20px;
+    color:black
+}
+.contact-info span{
+    font-family: 'Open Sans', sans-serif;
+    color:black;
+}
+.contact-info span:hover{
+    color: #0056B3;
+    cursor: pointer;
+}
+.contact-info i:hover{
+    color: #0056B3;
+}

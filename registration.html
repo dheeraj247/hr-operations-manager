@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family:'Open Sans', sans-serif;
+            background-image: url(images/img.avif); 
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            z-index: 1;
+        }
+        .form-container {
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="text"]::placeholder,
+        .form-container input[type="password"]::placeholder,
+        .form-container input[type="tel"]::placeholder {
+            color: #999;
+        }
+        .form-container .btn-green {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .form-container .btn-red {
+            width: 100%;
+            padding: 10px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container .btn-green:hover,
+        .form-container .btn-red:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="/submit-registration" method="POST">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="job-title" placeholder="Enter your job title" required>
+
+            <label for="department">Department</label>
+            <input type="text" id="department" name="department" placeholder="Enter your department" required>
+
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company name" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+            <button type="button" class="btn-green">Verify</button>
+            <button type="submit" class="btn-red">Sign Up</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

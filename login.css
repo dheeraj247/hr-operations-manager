@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #f4f4f4;
+    background-image: url(images/HR.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+
+}
+.form-container {
+    background-color: rgba(146, 118, 118, 0.489); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color:#f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+    width: 300px;
+    position: relative;
+    z-index: 1;
+}
+.remember-me{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.remember-me input{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 0.2s;
+    margin-right: 10px;
+}
+.remember-me input:hover{
+    transform: scale(1.7);
+}
+
+button {
+    padding: 10px;
+    background-color: #3e5dda;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:blue;
+}
+h1{
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #3e5dda;
+    transition: border-color 0.3s;
+}
+input:focus{
+    border-color: #3e5dda;
+    border-width: 3px;
+    outline: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Roboto', sans-serif; 
+}
+label{
+    pointer-events: none;
+}
+.sign-in-ops {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-ops a {
+    width: 50px;
+    height: auto;
+}
+
+.google-icon{
+    width: 100%;
+    height: auto;
+}
+.microsoft-icon{
+    width: 70%;
+    height: auto;
+    margin-top: 5px;
+}
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#password {
+    flex: 1;
+    padding-right: 40px;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    background-image: url('images/ens.jpg');
+    background-image: url('images/ens-off.jpg');
+}
+
+#toggle-password:hover {
+    opacity: 0.8; 
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="dash.html">Dashboard</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="profile-icon">
+            <i class="fas fa-user-circle" style="font-size: 40px; color: gray;"></i>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="metrics">
+            <div class="metric">
+                <h2>Total Applications</h2>
+                <p>100</p>
+            </div>
+            <div class="metric">
+                <h2>Applications in Review</h2>
+                <p>30</p>
+            </div>
+            <div class="metric">
+                <h2>Shortlisted Candidates</h2>
+                <p>20</p>
+            </div>
+            <div class="metric">
+                <h2>Interviews Scheduled</h2>
+                <p>10</p>
+            </div>
+        </div>
+    
+        <div class="app-list">
+            <h2>Application Overview</h2>
+            <input type="text" placeholder="Search..." />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Applicant Name</th>
+                        <th>Email</th>
+                        <th>Opportunity ID</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>12345</td>
+                        <td>Shortlisted</td>
+                        <td class="buttons"><button>View</button> <button>Edit</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>12345</td>
+                        <td>Shortlisted</td>
+                        <td class="buttons"><button>View</button> <button>Edit</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>12345</td>
+                        <td>Shortlisted</td>
+                        <td class="buttons"><button>View</button> <button>Edit</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>12345</td>
+                        <td>Rejected</td>
+                        <td class="buttons"><button>View</button> <button>Edit</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>12345</td>
+                        <td>Pending</td>
+                        <td class="buttons"><button>View</button> <button>Edit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="recent-activities" id="reports">
+            <h2>Recent Activities</h2>
+            <ul>
+                <li>John Doe applied for Opportunity ID 12345.</li>
+                <li>Jane Smith was shortlisted for interview.</li>
+                <li>Offer letter sent to Mark Brown.</li>
+            </ul>
+        </div>
+        <div class="quick-actions">
+            <a href="manager.html">
+                <button>Add New Applicant</button>
+            </a>
+            <button id="generate-reports">Generate Reports</button>
+            <button>Manage Users</button>
+        </div>
+    </div>
+    <div id="contact" class="Contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-phone-alt">
+                    <span>1234567890</span>
+                </i>
+            </div>
+            <div>
+                <i class="fas fa-envelope">
+                    <span>abc@gmail.com</span>
+                </i>
+            </div>
+            <div>
+                <i class="fab fa-linkedin">
+                    <span>Linkedin.com</span>
+                </i>
+            </div>
+        </div>
+    </div>
+    <script src="dash.js"></script>
+</body>
+</html>
